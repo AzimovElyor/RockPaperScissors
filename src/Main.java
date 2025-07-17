@@ -14,6 +14,9 @@ public class Main {
 do{
     System.out.print(" Enter only rock, paper, or scissors, tugash ==> ");
     myChoice = scanner1.next();
+    if(myChoice.equals("tugash")){
+        break;
+    }
     String computerChoice;
     int randomNumber = random.nextInt(0, 3);
 
@@ -99,9 +102,9 @@ do{
     System.out.println("Win Number = " + winNumber + " and Loss Number = " + lossNumber + " and Draw Number = " + drawNumber);
 
 
-}while(!myChoice.equals("tugash")); // tugash == tugash
+}while(true); // tugash == tugash
 
-        System.out.println("The game ends");
+        System.out.println("The game ends ");
 
 
 
